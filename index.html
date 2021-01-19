@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+  <title>Krystal Truong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  
+  <!-- Introduction -->
+  <div class="h2" id="left-align">Nice to meet you!</div>
+  <div class="spacing-10"></div>
+  <div class="h1">I'm Krystal (she/her).</div>
+  <div class="spacing-10"></div>
+  <div class="h3" id="coloured-text">
+    I chose to study Systems Design Engineering at the University of Waterloo because of my curiosity to build things.
+    Now, I'm learning to build experiences for people, with a goal to humanize technology through design.
+  </div>
+  
+  <!-- Accordion -->
+  <div class="spacing-60"></div>
+  <div class="h2" id="left-align">A peek at what I've been up to ↓</div>
+  <div class="spacing-20"></div>
+  
+  <!-- Panel 1 -->
+  <button class="accordion" id="first-accordion">
+    <div class="accordion-name">→  Interning at Soulfx Technologies and RBC</div>
+  </button>
+  <div class="panel">
+    <div class="panel-content">
+      <div class="grid-text">
+        <div class="h2">Soulfx Technologies — Software Designer</div>
+        <div class="h2" id="right-align">Fall 2020</div>
+        <div class="h2">Royal Bank of Canada — Mobile Developer</div>
+        <div class="h2" id="right-align">Winter 2020</div>
+        <div class="h2">Sunnybrook Research Institute — Software Developer</div>
+        <div class="h2" id="right-align">Summer 2019</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel 2 -->
+  <button class="accordion">
+    <div class="accordion-name">→  Designing brand assets for Tech+ UW</div>
+  </button>
+  <div class="panel">
+      <div class="panel-content">
+        <div class="grid-3">
+          <img src="techplus.png">
+          <img src="techplus2.png">
+          <img src="techplus3.png">
+        </div>
+
+        <div class="accordion-caption">
+          <div class="spacing-20"></div>
+          <div class="h2">Original designs by me ↑</div>
+          <div class="h2">Fostering a more diverse and inclusive tech community at the University of Waterloo</div>
+          <div class="h2">Spearheading creative initatives to grow social media reach by 793%</div>
+          <a id="link-mono" href="https://www.instagram.com/techplusuw/" target="_blank">Instagram ↗</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Panel 3 -->
+  <button class="accordion">
+    <div class="accordion-name">→  Participating in the uXperience Think-Privacy Design Jam</div>
+  </button>
+  <div class="panel">
+    <div class="panel-content">
+      <div class="grid-web">
+        <div>
+            <div class="h2">Clubhouse is a privacy-concious web application for students and teachers to participate in virtual after-school activities</div>
+            <div class="spacing-20"></div>
+            <div class="h2">Team: 5 Designers</div>
+            <div class="spacing-10"></div>
+            <div class="h2">Placed: 1st out of 70+ participants ☺</div>
+            <div class="spacing-20"></div>
+            <a id="link-mono" href="https://devpost.com/software/clubhouse-l203nm" target="_blank">View Prototype ↗</a>
+        </div>
+        <div>
+          <video loop autoplay muted src="uXperience.mov">></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel 4 -->
+  <button class="accordion">
+    <div class="accordion-name">→ Participating in the Adobe Xd + Activision Creative Jam</div>
+  </button>
+  <div class="panel">
+    <div class="panel-content">
+      <div class="grid-mobile">
+        <div>
+            <div class="h2">Pebble is a mobile community platform for gamers to connect with friends and discover games that fit their interests</div>
+            <div class="spacing-20"></div>
+            <div class="h2">Team: 3 Designers</div>
+            <div class="spacing-10"></div>
+            <div class="h2">Placed: 3rd out of 900+ participants</div>
+            <div class="spacing-20"></div>
+            <a id="link-mono" href="https://xd.adobe.com/view/2c6b7781-b9f4-4775-4362-dfc98949ca05-5a5a/?fullscreen" target="_blank">View Prototype ↗</a>
+        </div>
+        <div>
+          <video loop autoplay muted src="creativejam.mov">></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel 5 -->
+  <button class="accordion">
+    <div class="accordion-name">→  Exploring new hobbies</div>
+  </button>
+  <div class="panel">
+    <div class="panel-content">
+      <div class="grid-3">
+        <div>
+          <img src="forcontext.png">
+          <div class="spacing-20"></div>
+          <div class="h2">Recording a podcast ↑</div>
+        </div>
+        <div>
+          <img src="latte.png">
+          <div class="spacing-20"></div>
+          <div class="h2">Drawing + drinking lattes ↑</div>
+        </div>
+        <div>
+          <img src="pineapplebuns.png">
+          <div class="spacing-20"></div>
+          <div class="h2">baking (lots of it!) ↑</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="spacing-60"></div>
+  <div class="h2" id="align-left">Thanks for stopping by, let's connect!</div>
+
+  <div class="spacing-20"></div>
+  <div id="colored-text">
+    ↳ &nbsp; <a id="link-mono" href="https://drive.google.com/file/d/10ijoyhr-ViEUEl3iibBz9ikyuW-i1WU8/view?usp=sharing" target="_blank">Resume ↗</a> , 
+      &nbsp;
+        <a id="link-mono" href="mailto:k33truon@uwaterloo.ca">Email ↗</a> , 
+        &nbsp;
+        <a id="link-mono" href="https://www.linkedin.com/in/krystal-truong/" target="_blank">LinkedIn ↗</a>
+  </div>
+  <div class="spacing-60"></div>
+
+  <!-- Accordian Script -->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+  <!-- Play Video Script -->
+  <script>
+    document.getElementById('vid').play();
+  </script>
+
+</div>
+</body>
+</html>
+
