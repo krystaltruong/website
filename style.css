@@ -60,7 +60,6 @@ body {
     font-weight: 400;
     line-height: 2em;
     padding: 0;
-    color: #202020;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #333333;
@@ -68,12 +67,47 @@ body {
   }
   
   .h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.3em;
     line-height: 1.55em;
     color: #606060;
     margin: 0;
     font-weight: 400;
+  }
+    
+  .h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
+    line-height: 2em;
+    padding: 0;
+    color: #4B5F93;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 2em;
+    padding: 0;
+    color: #333333;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+
+  .h6 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.0em;
+    font-weight: bolder;
+    line-height: 2em;
+    padding: 0;
+    color: #4B5F93;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: left;
   }
   
   #left-align {
@@ -151,6 +185,20 @@ body {
   }
   
   /* Grids */
+  .grid-intro {
+    width: 100%;
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template-columns: 25% 70%;
+  }
+
+  .grid-full {
+    width: 100%;
+    display: grid;
+    grid-column-gap: 5%;
+    grid-template-columns: 100%;
+  }
+
   .grid-text {
     width: 100%;
     display: grid;
@@ -195,9 +243,15 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  #profile {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+  }
   
   /* Clickable */
-  #link-mono {
+  #link-underline {
     color: #333333;
     cursor: pointer;
     text-decoration: none;
