@@ -21,9 +21,6 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    animation: fade-in ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
 
   /* Spacing */
@@ -78,6 +75,9 @@ body {
     align-items: left;
     column-gap: 30px;
     row-gap: 30px;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
   .flex-left {
