@@ -138,6 +138,10 @@ body {
     color: #1D33FF;
   }
 
+  a.text.coloured {
+    color: #1D33FF;
+  }
+
   a.block {
     color: #1D33FF;
     background: linear-gradient(to left, #fffdfB 50%, #1D33FF 50%) right;
