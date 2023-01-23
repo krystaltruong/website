@@ -6,22 +6,91 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #FFFBF6;
   }
-  
-  /* Content */
-  .container {
-    max-width: 60%;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+
+.background {
+  background: radial-gradient(70.7% 101.31% at 6.91% -5.81%,
+  rgba(137, 184, 255, 0.2) 4.81%, rgba(255, 188, 188, 0) 100%),
+  radial-gradient(142.01% 374.42% at 87.85% 111.74%, rgba(249, 210, 210, 0.2) 0%,
+  rgba(255, 232, 232, 0) 100%)
+  , #253527;
+}
+
+ .frame-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 0px;
+ }
+
+ .frame-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 0px;
+  gap: 0px;
+ }
+
+ .flex-heading {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+  .flex-container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    height: fit-content;
     justify-content: center;
+  }
+
+  .flex-half {
+    width: 20%;
+  }
+
+  .flex-left {
+    width: 30%;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+
+  }
+
+  .flex-center {
+    width: 2%;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     position: relative;
   }
+
+  .flex-right {
+    width: 30%;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+
+  .flex-full {
+    width: 50%;
+  }
+
+ .link {
+  color: #FFFBF6;
+ }
+
+ .link:hover {
+  text-decoration: none;
+  color: #9194f9!important;
+ }
 
   /* Spacing */
   .spacing-10 {
@@ -40,86 +109,85 @@ body {
   }
   
   /* Text */
-  .h1 {
-    font-family: "Roboto Mono", monospace;
+  h1 {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
     font-size: xx-large;
-    font-weight: normal;
-    line-height: 150%;
-    padding: 0;
+    align-items: center;
+    letter-spacing: 0.04em;
+    background: linear-gradient(94.63deg, rgba(41, 85, 240, 0.5) -6.86%, rgba(105, 133, 100, 0.5) 49.49%), #FFFBF6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 2%;
   }
   
-  .h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: small;
-    font-weight: bolder;
-    line-height: 2em;
-    padding: 0;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: left;
-  }
-
-  .h3 {
-    font-family: "Roboto Mono", monospace;
+  h2 { 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
     font-size: large;
-    font-weight: lighter;
-    line-height: 150%;
-    padding: 0;
-    text-align: left;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: #FFFBF6;
+    margin-bottom: 2%;
+  }
+
+  h3 {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: small;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: #FFFBF6;
+    margin-bottom: 2%;
+  }
+
+  h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: small;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFBF6;
   }
   
-  .parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
-    column-gap: 30px;
-    row-gap: 30px;
-    animation: fade-in ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  h5 {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    letter-spacing: 0.08em;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4%;
   }
 
-  .flex-left {
-    width: 32%;
+  h6 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: x-large;
+    letter-spacing: 0.08em;
+    color: #3E6142;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4%;
   }
 
-  .flex-center {
-    width: 3%;
-  }
-
-  .flex-left.image {
-    height: 100px;
-    background-image: url("wave.png");
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .flex-left.image:hover {
-    background-image: url("pose.png");
-  }
-
-  .flex-right {
-    width: 55%;
-  }
-
-  .flex-full {
-    width: 100%;
-  }
-
-  .child {
-    flex: 1 1 40%;
-    box-sizing: border-box;
-    border: #333333;
-    border-width: 3px;
-    border-style: solid;
-    padding: 3%
-  }
-
-  hr {
-    border-width: thin;
-    border-style: solid;
+  h7 {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 900;
+    font-size: small;
+    letter-spacing: 0.08em;
+    color: #24201F;
+    margin-bottom: 0;
   }
 
   /* Media */
@@ -127,43 +195,26 @@ body {
     width: 100%;
     height: auto;
   }
+
+  .hover {
+    position: absolute;
+  }
+
+  .hover_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .flex-container:hover .hover_img {
+    display: inline;
+  }
+
+  .flex-container:hover .hover_txt {
+    text-shadow: 1px 1px 4px #D6DCF6;
+  }
   
-  /* Clickable */
   a {
-    color:#333333;
     text-decoration: none;
-  }
-
-  a.text:hover {
-    color: #1D33FF;
-  }
-
-  a.text.coloured {
-    color: #1D33FF;
-  }
-
-  a.block {
-    color: #1D33FF;
-    background: linear-gradient(to left, #fffdfB 50%, #1D33FF 50%) right;
-    background-size: 200%;
-    transition: .1s ease-out;
-  }
-  
-  a.block:hover {
-    color: #ffffff;
-    background-position: left;
-  }
-
-  .child:hover {
-    border: #1D33FF;
-    border-width: 3px;
-    border-style: solid;
-  }
-
-  a:active {
-    color:#1D33FF;
-  }
-
-  #clickable-large {
-    font-size: xx-large;
   }
